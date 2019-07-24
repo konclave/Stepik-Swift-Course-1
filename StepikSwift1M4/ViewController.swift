@@ -18,14 +18,12 @@ class ViewController: UIViewController {
     }
 
     @IBAction func onSubmit(_ sender: Any) {
-        guard usernameField.text != "" && passwordField.text != "" else {
+        guard usernameField.text != "" && passwordField.text == "foo" else {
             return
         }
         
         let helloViewController = HelloViewController()
-        
         helloViewController.username = usernameField.text!
-        
         present(helloViewController, animated: true, completion: nil)
     }
     

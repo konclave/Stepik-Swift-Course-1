@@ -8,41 +8,37 @@
 
 import UIKit
 
-protocol SetCaptionDelegate {
-    func didSubmitCaption(caption: String)
-}
+class LabelEditViewController: UIViewController, UITextFieldDelegate {
 
-class LabelEditViewController: UIViewController {
-
-    var captionDelegate: SetCaptionDelegate!
-    var caption: String!
+    var usernameDelegate: SetUsernameDelegate!
+    var username: String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelField.text = caption
+        labelField.text = username
+        labelField.delegate = self
     }
 
     @IBOutlet weak var labelField: UITextField!
-    @IBAction func onSubmitLabel(_ sender: Any) {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool
+    {
+        if let nextField = textField.superview?.viewWithTag(textField.tag + 1) as? UITextField {
+            nextField.becomeFirstResponder()
+        } else {
+            // Not found, so remove keyboard.
+            textField.resignFirstResponder()
+        }
+        // Do not add a line break
+        return false
+    }
+    
+    @IBAction func didEdit(_ sender: UITextField) {
         guard labelField.text != nil else {
             return
         }
-        captionDelegate.didSubmitCaption(caption: labelField.text!)
-        navigationController?.popViewController(animated: true)
+        username = labelField.text!
+        usernameDelegate.didSubmitUsername(username: username)
+        tabBarController?.selectedIndex = 0
     }
-    
-    @IBAction func onCancelLabelEdit(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
-    }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

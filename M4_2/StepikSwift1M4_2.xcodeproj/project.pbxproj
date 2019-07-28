@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		2B4EBAB922EDD42C00DAC3DA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EBAB722EDD42C00DAC3DA /* MainViewController.swift */; };
 		2B4EBABA22EDD42C00DAC3DA /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B4EBAB822EDD42C00DAC3DA /* MainViewController.xib */; };
+		2B4EBABD22EDE29100DAC3DA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B4EBABB22EDE29100DAC3DA /* LoginViewController.swift */; };
+		2B4EBABE22EDE29100DAC3DA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B4EBABC22EDE29100DAC3DA /* LoginViewController.xib */; };
 		2B68AD0522E87B26007B4568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B68AD0422E87B26007B4568 /* AppDelegate.swift */; };
 		2B68AD0E22E87B2D007B4568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B68AD0D22E87B2D007B4568 /* Assets.xcassets */; };
 		2B68AD1122E87B2D007B4568 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B68AD0F22E87B2D007B4568 /* LaunchScreen.storyboard */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		2B4EBAB722EDD42C00DAC3DA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		2B4EBAB822EDD42C00DAC3DA /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		2B4EBABB22EDE29100DAC3DA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2B4EBABC22EDE29100DAC3DA /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		2B68AD0122E87B26007B4568 /* StepikSwift1M4_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StepikSwift1M4_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B68AD0422E87B26007B4568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B68AD0D22E87B2D007B4568 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				2B68AD1C22E87D40007B4568 /* Title.swift */,
 				2B4EBAB722EDD42C00DAC3DA /* MainViewController.swift */,
 				2B4EBAB822EDD42C00DAC3DA /* MainViewController.xib */,
+				2B4EBABB22EDE29100DAC3DA /* LoginViewController.swift */,
+				2B4EBABC22EDE29100DAC3DA /* LoginViewController.xib */,
 			);
 			path = StepikSwift1M4_2;
 			sourceTree = "<group>";
@@ -131,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B4EBABE22EDE29100DAC3DA /* LoginViewController.xib in Resources */,
 				2B68AD1122E87B2D007B4568 /* LaunchScreen.storyboard in Resources */,
 				2B68AD1B22E87BA9007B4568 /* LabelEditViewController.xib in Resources */,
 				2B4EBABA22EDD42C00DAC3DA /* MainViewController.xib in Resources */,
@@ -148,6 +155,7 @@
 				2B68AD1D22E87D40007B4568 /* Title.swift in Sources */,
 				2B68AD1A22E87BA9007B4568 /* LabelEditViewController.swift in Sources */,
 				2B4EBAB922EDD42C00DAC3DA /* MainViewController.swift in Sources */,
+				2B4EBABD22EDE29100DAC3DA /* LoginViewController.swift in Sources */,
 				2B68AD0522E87B26007B4568 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

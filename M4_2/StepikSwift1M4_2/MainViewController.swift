@@ -16,7 +16,7 @@ class MainViewController: UIViewController {
         let labelEditViewController = LabelEditViewController(nibName: "LabelEditViewController", bundle: nil)
         labelEditViewController.caption = Label.text
         labelEditViewController.captionDelegate = self
-        present(labelEditViewController, animated: true)
+        navigationController?.pushViewController(labelEditViewController, animated: true)
     }
     
     override func viewDidLoad() {

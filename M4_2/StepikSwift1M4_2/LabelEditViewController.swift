@@ -28,11 +28,11 @@ class LabelEditViewController: UIViewController {
             return
         }
         captionDelegate.didSubmitCaption(caption: labelField.text!)
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     @IBAction func onCancelLabelEdit(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
+        navigationController?.popViewController(animated: true)
     }
     
     /*
